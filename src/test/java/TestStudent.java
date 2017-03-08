@@ -18,15 +18,11 @@ public class TestStudent {
     private IStudent student;
 
     @Before
-    public void setupA() {
+    public void setup() {
         this.admin = new Admin();
+        this.instructor = new Instructor();
+        this.student = new Student();
     }
-
-    @Before
-    public void setupI() { this.instructor = new Instructor();}
-
-    @Before
-    public void setupS() { this.student = new Student();}
 
     // Try to register after creating a class
     @Test
