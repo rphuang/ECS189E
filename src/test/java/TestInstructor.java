@@ -17,16 +17,11 @@ public class TestInstructor {
     private IStudent student;
 
     @Before
-    public void setupA() {
+    public void setup() {
         this.admin = new Admin();
+        this.instructor = new Instructor();
+        this.student = new Student();
     }
-
-    @Before
-    public void setupI() { this.instructor = new Instructor();}
-
-    @Before
-    public void setupS() { this.student = new Student();}
-
 
     // Try to add homework after creating a class and adding instructor to it.
     @Test
